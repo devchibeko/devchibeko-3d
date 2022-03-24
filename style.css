@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: linear-gradient(-45deg,#0d2323,#0d2525);
+  background-size: 200% 200%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  perspective: 600px;
+  animation: bcg 10s linear infinite;
+}
+h1{
+  text-align: center;
+  padding: 1rem;
+  margin: 1rem;
+  background: #fff;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+div{
+  position: absolute;
+  width: 250px;
+  height: 400px;
+}
+.card{
+  top: 30%;
+  left: 50%;
+  margin-left: -75px;
+  margin-top: -75px;
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+  /* transform: rotateX(0deg);
+  transform: rotateY(0deg);
+  transform: rotate(0deg);
+  transform: rotateZ(50deg);
+  transform: skewX(0deg);
+  transform: skewY(30deg);
+  transform: skew(25deg);
+  transform: scaleX(2) scaleY(2);
+  transform: scale(4);
+  transform: translateY(50%);
+  transform: rotate(50deg);
+  transform-origin: top left;
+  animation: an 1s linear infinite alternate;
+  transform: rotateY(0deg); */
+  transition: transform 1s;
+}
+
+.span1{
+  width: 100%;
+  position: absolute;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  margin-top: 110px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+.span2{
+  width: 100%;
+  position: absolute;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-top: 150px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+}
+
+.icon1{
+  position: absolute;
+  color: #fff;
+  top: 60%;
+  left: 25%;
+  cursor: pointer;
+}
+.icon2{
+  position: absolute;
+  color: #fff;
+  top: 60%;
+  left: 35%;
+  cursor: pointer;
+}
+.icon3{
+  position: absolute;
+  color: #fff;
+  top: 60%;
+  left: 45%;
+  cursor: pointer;
+}
+.icon4{
+  position: absolute;
+  color: #fff;
+  top: 60%;
+  left: 55%;
+  cursor: pointer;
+}
+.icon5{
+  position: absolute;
+  color: #fff;
+  top: 60%;
+  left: 65%;
+  cursor: pointer;
+}
+.icon{
+  transition: transform .5s;
+}
+.icon:hover{
+  transform: scale(1.2) translateY(-5px);
+}
+
+
+.card .box{
+  background: url(./beko.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: -70px;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  border-radius: 30px;
+}
+.card .box:last-child{
+  background: #0d1117;
+  transform: rotateY(180deg) rotate(180deg);
+  backface-visibility: hidden;
+  border-radius: 30px;
+}
+.card .bot{
+  z-index: 1;
+  position: absolute;
+  background: linear-gradient(90deg,rgba(255, 255, 255, 0.15),rgba(255, 255, 255, 0.11));
+  transform: rotateY(180deg) rotate(180deg);
+  backface-visibility: hidden;
+  width: 125px;
+  border-radius: 30px 0 0 30px;
+}
+.card:hover{
+  transform: rotateX(180deg);
+}
+
+@keyframes bcg{
+  0%{
+    background-position: 0 50%;
+  }
+  100%{
+    background-position: 100% 50%;
+  }
+}
